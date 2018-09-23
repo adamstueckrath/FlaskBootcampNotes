@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="jumbotron">
+  <h1>Let's see how you performed!</h1>
+  <p>Your username is {{username}}</p>
+  <ul>
+    {% for test in username_test %}
+      <li>{{ test }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
